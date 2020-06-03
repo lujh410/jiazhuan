@@ -1,0 +1,5 @@
+<!--pages/library/library.wxml-->
+<text>pages/library/library.wxml</text>
+
+<web-view src='https://www.kujiale.com/design?kpm=9V8.18b2c489779db74e.53731d1.1591153028828'>
+</web-view>

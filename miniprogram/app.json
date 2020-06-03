@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/category/category",
+    "pages/library/library",
+    "pages/card/card",
+    "pages/news/news",
+    "pages/news_detail/news_detail"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "飞龙装修",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1E90FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabbar/home_back.png",
+        "selectedIconPath": "/images/tabbar/home_front.png"
+      },
+      {
+        "pagePath": "pages/library/library",
+        "text": "图库",
+        "iconPath": "/images/tabbar/library_back.png",
+        "selectedIconPath": "/images/tabbar/library_front.png"
+      },
+      {
+        "pagePath": "pages/card/card",
+        "text": "名片",
+        "iconPath": "/images/tabbar/card_back.png",
+        "selectedIconPath": "/images/tabbar/card_front.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "/images/tabbar/my_back.png",
+        "selectedIconPath": "/images/tabbar/my_front.png"
+      }
+    ]},
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

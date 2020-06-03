@@ -1,0 +1,2 @@
+<!--pages/news/news.wxml-->
+  <web-view src="http://www.sina.com.cn"></web-view>

@@ -1,0 +1,107 @@
+<!--miniprogram/pages/index/index.wxml-->
+<!--1.展示轮播图-->
+<view class="container">
+<swiper class="swiper" 
+        indicator-dots 
+        indicator-active-color = "#000000"
+        autoplay
+        circular
+        previous-margin="35rpx"
+        next-margin="35rpx"
+        interval = "3000"
+        duration = "300"
+>
+  <block wx:for = "{{banners}}" wx:key = "id">
+    <swiper-item class = "swiper-item">
+      <image class="swiper-image" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<!-- 2.中间导航 -->
+<view class="nav01">
+  <view>
+    <view class="nav_tuandui">
+      <image src="/images/index/tuandui.png"></image>
+    </view>  
+    <text>团队</text>
+  </view>
+  <view>
+    <view class="nav_tuku">
+      <image src="/images/index/tuku.png"></image>
+    </view>
+    <text>案例图库</text>
+  </view>
+  <view>
+     <view class="nav_gongcheng">
+       <image src="/images/index/gongcheng.png"></image>
+     </view>
+    <text>项目工程</text>
+  </view>
+  <view>
+    <view class="nav_jisuan">
+      <image src="/images/index/jisuan.png"></image>
+    </view>
+    <text>装修报价</text>
+  </view>
+</view>
+<!-- 3.中间广告栏 -->
+<view class="guangao">
+<image src="https://tgi12.jia.com/128/398/28398045.jpg"></image>
+</view>
+<!-- 4.团队展示 -->
+<view class='tab-control'>
+  <block wx:for="{{teams}}" wx:key="index">
+    <view class='tab-item {{index == currentIndex?"active": ""}}'
+          bind:tap="itemClick" 
+          data-index="{{index}}"> 
+          <!-- data-index属性：用于后台事件获取的时候可以用index来区分是哪个 -->
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
+<view class="team_container">
+  <block wx:for = "{{teams_detail[teams[currentIndex]]}}" wx:key="id">
+   <view class="team_member">
+    <image src="{{item.avatar}}"></image>
+    <text>{{item.name}}</text>
+  </view>
+  </block>
+</view>
+<!-- 5.装饰分割线 -->
+<view class="line"></view>
+<!-- 6.装修效果图 -->
+<view class="head">
+  <text>装修效果图</text>
+  <view bindtap="libarymoretap">
+    <text>更多</text>
+    <image src="/images/index/next.png"></image>
+  </view>
+</view>
+<scroll-view class="library_content">
+  <view>信息</view>
+</scroll-view>
+
+ <view class="line_little"></view>
+
+<!-- 7.行业资讯 -->
+<view class="head">
+  <text>今日头条</text>
+  <view bindtap="newsmoretap">
+    <text>更多</text>
+    <image src="/images/index/next.png"></image>
+
+  </view>
+</view>
+<view class="news">
+  <block wx:for ="{{news}}" wx:key='index'>
+    <view class="line_little"></view>
+    <view class="newsitem" bindtap="newsitemtap" data-key="{{item.url}}">
+      <image src="{{item.picUrl}}"></image>
+      <view class="content">
+        <text class="title">{{item.title}}</text>
+        <text class="description">{{item.description}}</text>
+      </view>
+      </view>
+  </block>
+</view> 
