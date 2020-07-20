@@ -1,0 +1,20 @@
+<!--pages/institute/institute.wxml-->
+<view class="head">
+  <text>Home</text>
+  <text> - </text>
+  <text class="ins_text">专业学院</text>
+</view>
+<view  class="container">
+  <view class="content" wx:for = '{{institute_list}}' wx:key='index' data-cateId="{{item.cateId}}" data-institutename="{{item.institutename}}" bindtap="insuitebtn">
+    <view> 
+      <image src='{{item.instituteiimgcon}}'></image>
+    </view>
+    <view class="detail">
+      <text class="institutename">{{item.institutename}}</text>
+      <text class="institutesubtitle">{{item.institutesubtitle}}</text>
+      <view class="line"></view>
+      <text class="instituteNum">{{item.instituteNum}}</text>
+    </view>
+  </view>
+</view>
+

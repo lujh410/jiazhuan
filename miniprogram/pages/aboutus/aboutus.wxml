@@ -1,0 +1,110 @@
+<!--pages/aboutus/aboutus.wxml-->
+ <import src="../../wxParse/wxParse.wxml"/>
+<view>
+  <view>
+  <video  autoplay  poster="{{video_poster}}" custom-cache = "{{false}}" loop
+  src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/xiaoqingyun.mp4"></video>
+  </view>
+  <view class="content">
+    <view class="head">小青云 智慧成长</view>
+    <view class="detail">
+    <view>
+      <text decode="{{true}}">&emsp;&emsp;小青云工作室专注于为各年龄段学生提供基于科技创新、放眼全球的素质教育。
+      </text>
+    </view>
+      <view>
+        <text decode="{{true}}">&emsp;&emsp;秉承“开放共享，云成长”的信念，小青云依托量子大学及享渔教育资源，按照“全国青少年机器人技术等级考试”教学要求，通过不断改进教学方式和开发体系化教学内容，为教育者和学习者提供从内容到工具到服务的整体解决方案，以提升学生在人工智能时代的科技素养和创新实践能力，成为热爱分享的终身学习者。
+       </text>
+    </view>
+      <view>
+        <text decode="{{true}}">&emsp;&emsp;小青云工作室是量子大学的代理商，为各企事业单位提供专业学院级别的各种培训教育资源，帮助企事业单位培训所需人才。
+        </text>
+       </view>
+       </view>
+  </view>
+</view>
+
+<view class="title">主营项目</view>
+  <view class="item-up">
+    <view id="courseitem1" class="item01" bindtap="courseitemclick">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item01.png"></image>
+      <text>科创课程</text>
+    </view>
+    <view class="item02" bindtap="courseitemclick">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item02.jpg"></image>
+      <text>竟赛课程</text>
+    </view>
+  </view>
+  <view class="item-down">
+    <view class="item03">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item03.jpg"></image>
+      <text>冬夏令营</text>
+    </view>
+    <view class="item04" bindtap="courseitemclick">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item04.jpg"></image>
+      <text>师资培训</text>
+    </view>
+    <view class="item05" bindtap="courseitemclick05">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item05.png"></image>
+      <text>课程云平台</text>
+    </view>
+  </view>
+
+  <view class="html_div_instro">
+    <!-- 这里data中article为bindName -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+
+<view class="title" wx:if = "{{instro}}">讲师介绍</view>
+  <view class="teacher">
+    <view class="teacherimg">
+    <image src="{{instro.img_url}}"></image>
+    </view>
+    <view>
+     <view  class="content2">
+       <view class='head2'> <text  decode="{{true}}">专业讲师：</text></view>  
+       <view  class="content3">
+       <text decode="{{true}}">{{instro.teacher}}</text></view>
+     </view>
+       <view  class="content2">
+        <view  class='head2'><text decode="{{true}}">毕业院校：</text></view>
+        <view  class="content3">
+        <text decode="{{true}}">{{instro.school}}</text>
+        </view>
+        </view>
+       </view>
+     <view  class="content2">
+        <view  class='head2'><text decode="{{true}}">所获证书：</text></view>
+        <view  class="content3">
+       <text decode="{{true}}">{{instro.zhenshu}}</text>
+       </view>
+       </view>
+    <view>
+    <view  class="content2">
+      <view  class='head2'><text decode="{{true}}">从业介绍：</text></view>
+      <view  class="content3">
+       <text decode="{{true}}">{{instro.work}}</text>
+     </view>
+     </view>
+    </view>
+   <view  class="content2">
+      <view  class='head2'><text decode="{{true}}">课程特点：</text></view>
+      <view  class="content3">
+       <text decode="{{true}}">{{instro.ketangtiedian}}</text>
+     </view>
+     </view>
+  </view>
+  <view class="code">
+  <view class="title">企业微信:</view>如皋市小青云科技工作室
+  <image bindtap = "previewimg" src="{{image}}" data-src="{{image}}"></image>
+</view>
+  <view class="title">联系地址:</view>
+  <view class="address">
+   <text decode="{{true}}">如皋市石庄镇洪港村二十一组1号（二圩桥东）</text>
+  </view>
+
+
+ <map id="map" longitude="{{markers[0].longitude}}" latitude="{{markers[0].latitude}}" 
+ scale="14" controls="{{controls}}" 
+ bindcontroltap="controltap" markers="{{markers}}" data-markers="{{markers}}"
+ polyline="{{polyline}}"  bindmarkertap='gotohere'></map>

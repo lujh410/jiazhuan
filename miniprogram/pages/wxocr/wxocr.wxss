@@ -1,0 +1,11 @@
+/* pages/wxocr/wxocr.wxss */
+.ocr-wrapper {
+  margin: 40rpx auto;
+  width: 375rpx;
+}
+.intro {
+  margin: 40rpx;
+}
+button{
+  margin: 10rpx;
+}

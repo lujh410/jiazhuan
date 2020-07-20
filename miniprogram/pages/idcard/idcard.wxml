@@ -1,0 +1,28 @@
+<!--pages/idcard/idcard.wxml-->
+<view class="title">图像识别之OCR-卡证识别</view>
+<view>方案一：微信OCR</view>
+<button bindtap='shenfenzheng' type='primary'>身份证识别</button>
+<button bindtap='yinhangka' type='primary'>银行卡识别</button>
+
+<view>方案二：百度OCR</view>
+<button bindtap='scanidcard_baidu' type='primary'>身份证识别</button>
+<button bindtap='scanbankcard_baidu' type='primary'>银行卡识别</button>
+<button bindtap='scancommon_baidu' type='primary'>通用文字识别</button>
+<!-- <button bindtap='uploadimgbase64'>uploadimgbase64</button>
+<button bindtap="upload_copress_img">compress</button>
+<button bindtap="upload_copress_imgdata">compressimgdata</button> -->
+<view>识别结果：</view>
+<view>{{name}}</view>
+<view>{{idcard}}</view>
+<view>{{userloc}}</view>
+<view>{{bankcardinfo.bank_card_number}}</view>
+<view>{{bankcardinfo.valid_date}}</view>
+<view>{{bankcardinfo.bank_name}}</view>
+<view class="output">
+  <view class="content" wx:for = "{{outputdata}}" 
+  style="width:{{item.location.width}}px;height:{{item.location.height}}rpx;top:{{item.location.top}}rpx;left:{{item.location.left}}rpx">
+  {{item.words}}</view>
+</view>
+
+<canvas class="canvas" canvas-id="canvas" style="width:{{cWidth}}px;height:{{cHeight}}px;"></canvas>
+

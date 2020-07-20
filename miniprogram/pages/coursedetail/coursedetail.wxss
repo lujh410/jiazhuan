@@ -1,0 +1,110 @@
+/* pages/coursedetail/coursedetail.wxss */
+
+@import "/wxParse/wxParse.wxss";
+
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+video{
+  width: 700rpx;
+}
+
+.container{
+  padding: 30rpx;
+}
+.chapter-item{
+  /* margin-top: 20rpx; */
+  display: flex;
+  border-bottom: solid 2rpx #dddada;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  width: 700rpx;
+}
+
+.chapter{
+  width: 700rpx;
+  font-size: 30rpx;
+  text-align: left;
+  font-weight: 400;
+  padding: 30rpx;
+}
+
+
+.tab-control {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16rpx;
+  flex-direction: row;
+ 
+}
+
+.tab-item {
+  /* flex: 1;  */
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #555;
+  margin-right: 30rpx;
+}
+
+/* .active {
+  color: #7a50ee;
+} */
+.chapter-item.active{
+ background-color: #dddada ;
+  color: #7a50ee;
+}
+
+.tab-item.active text {
+  padding: 16rpx 10rpx;
+  border-bottom: 4rpx solid #7a50ee;
+  color: #7a50ee;
+}
+.html_div_instro{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.share-item{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.share {
+  margin-left: 180rpx;
+  width: 50rpx;
+  height: 50rpx;
+  /* right: 130rpx;
+  top: 100rpx; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  background: #fff;
+  z-index: 20;
+} 
+
+.share image,.save image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.share button {
+  position: absolute;
+  height: 100%;
+  width: 50rpx;
+  opacity: 0;
+  z-index: 99;
+}
+.save{
+  width: 200rpx;
+}
+.protitle{
+  margin-top: 30rpx;
+ margin-left: 30rpx;
+ margin-right: 30rpx;
+ font-weight: 50rpx;
+}

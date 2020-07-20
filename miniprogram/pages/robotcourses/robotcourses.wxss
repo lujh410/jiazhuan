@@ -1,0 +1,98 @@
+/* pages/robotcourses/robotcourses.wxss */
+
+.item01{
+  display: flex;
+  text-align: center;
+  width: 750rpx;
+  height: 300rpx;
+}
+
+.item01 image{
+  /* position: absolute; */
+  width: 750rpx;
+  height: 300rpx;
+  z-index: -1;
+}
+.text1{
+  z-index: 99;
+  left: 200rpx;
+  top:60rpx;
+  position: absolute;
+  font-size: 46rpx;
+  color:white;
+  font-weight: 900;
+}
+.text2{
+  z-index: 99;
+  left: 200rpx;
+  top:150rpx;
+  position: absolute;
+  font-size: 26rpx;
+  color:rgb(250, 250, 250);
+  font-weight: 600;
+}
+.text3{
+  z-index: 99;
+  left: 200rpx;
+  top:190rpx;
+  position: absolute;
+  font-size: 26rpx;
+  color:rgb(250, 250, 250);
+  font-weight: 600;
+}
+.courseitem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 20rpx 20rpx 20rpx;
+}
+.courseitem image{
+  width: 350rpx;
+  height: 320rpx;
+  margin-top: 10rpx;
+}
+.title{
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+}
+.head{
+  font-weight: 700;
+  width: 550rpx;
+  margin: 10rpx 0rpx;
+}
+.teacher{
+  margin: 20rpx;
+
+}
+.teacherimg{
+  /* width: 710rpx; */
+  display: flex;
+  justify-content: center;
+}
+.teacherimg image{
+  width: 450rpx;
+}
+map{
+  margin: 20rpx;
+  width: 710rpx;
+  height: 650rpx;
+}
+.address{
+  margin: 10rpx 20rpx;
+}
+.daxueimg{
+  width: 750rpx;
+  height: 400rpx;
+}
+.daxueimg image{
+  width: 750rpx;
+  height: 400rpx;
+}
+.title2{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+}

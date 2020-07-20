@@ -1,0 +1,91 @@
+/* pages/robotcoursesdetail/robotcoursesdetail.wxss */
+/* pages/robotcourses/robotcourses.wxss */
+
+.item01{
+  display: flex;
+  text-align: center;
+  width: 750rpx;
+  height: 300rpx;
+  position:relative
+}
+
+.item01 image{
+  /* position: absolute; */
+  width: 750rpx;
+  height: 300rpx;
+  z-index: -1;
+}
+.text1{
+  z-index: 99;
+  left: 250rpx;
+  top:60rpx;
+  position: absolute;
+  font-size: 46rpx;
+  color:white;
+  font-weight: 900;
+}
+.text2{
+  z-index: 99;
+  left: 270rpx;
+  top:150rpx;
+  position: absolute;
+  font-size: 26rpx;
+  color:rgb(250, 250, 250);
+  font-weight: 600;
+}
+.text3{
+  z-index: 99;
+  left: 280rpx;
+  top:200rpx;
+  position: absolute;
+  font-size: 26rpx;
+  color:rgb(250, 250, 250);
+  font-weight: 600;
+}
+.courseitem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 20rpx 40rpx 20rpx;
+}
+.courseitem image{
+  width: 300rpx;
+  height: 200rpx;
+  margin-top: 10rpx;
+}
+.title{
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+}
+.head{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  font-weight: 700;
+}
+.content{
+  width: 400rpx;
+}
+.detail{
+  color: rgb(102, 102, 102);
+}
+.container{
+  margin: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.course_info{
+  padding: 10rpx;
+  width: 340rpx;
+  height: 230rpx;
+  border: darkgrey 2rpx solid;
+  margin-bottom: 10rpx;
+}

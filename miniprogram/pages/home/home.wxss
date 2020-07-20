@@ -1,0 +1,348 @@
+/* miniprogram/pages/index/index.wxss */
+page{
+  display: flex;
+}
+.advertisementimg{
+  width: 710rpx;
+  margin:10rpx 20rpx 20rpx 20rpx;
+}
+.container{
+  /* height: 350rpx;
+  width: 750rpx;
+  background-color:#EDEDED;
+  display: flex;
+  flex-direction: row;
+  text-align: center; */
+  width: 750rpx;
+
+}
+.swiper {
+
+  width: 750rpx;
+
+
+}
+.swiper-item{
+  /* border-radius:35rpx; */
+  width: 750rpx;
+
+}
+/*image默认:320px*240px,需要修改100%*/
+.swiper-image {
+  width: 750rpx;
+  height: 450rpx;
+  /* height: 100%; */
+  /* border-radius:5%; */
+}
+.nav01{
+  margin-top: 20rpx;
+  width: 750rpx;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+.nav01>view{
+  display: flex;
+  flex-direction: column;
+}
+.nav01 image{
+  width: 60rpx;
+  height: 60rpx;
+  background-color: white;
+  border-radius: 10%;
+}
+.nav01 text{
+  margin-top: 10rpx;
+  font-size: 25rpx;
+}
+.nav01 .nav_tuandui{
+  background-color: #FF44AA;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav01 .nav_tuku{
+  background-color:orange;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav01 .nav_gongcheng{
+  background-color:rgb(238, 8, 238);
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav01 .nav_jisuan{
+  background-color:orange;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.guangao image{
+  width: 750rpx;
+  height: 260rpx;
+}
+
+.tab-control {
+  display: flex;
+  width: 750rpx;
+  margin-bottom: 16rpx;
+  justify-content: space-around;
+}
+
+.tab-item {
+  text-align: center;
+  width:170rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: rgb(118, 113, 113);
+  background-color:rgb(228, 226, 222) ;
+  border-radius: 15rpx;
+}
+
+
+.tab-item.active{
+  text-align: center;
+  width:170rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: white;
+  background-color:rgb(62, 143, 209) ;
+}
+.team_container{
+  display: flex;
+}
+.team_member{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.team_container image{
+ width: 200rpx;
+ height: 200rpx;
+ border-radius: 100%;
+}
+.team_container text{
+  margin-top: 20rpx;
+}
+.line{
+  width: 750rpx;
+  height: 20rpx;
+  background-color: rgb(228, 226, 222);
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+}
+.head>text{
+  line-height: 50rpx;
+  font-size: 38rpx;
+}
+.head >view{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.head >view>image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.head >view>text{
+  line-height: 50rpx;
+  color: #AAAAAA;
+  font-size: 28rpx;
+}
+.library_content{
+  width: 750rpx;
+}
+.news{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+}
+.news image{
+  width: 170rpx;
+  height: 170rpx;
+}
+.newsitem{
+  padding-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+}
+.newsitem .content{
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.newsitem .title{
+ font-weight: 800;
+ width: 540rpx;
+ display: -webkit-box;
+ -webkit-line-clamp: 1;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ -webkit-box-orient: vertical;
+ word-break: break-all;
+}
+.newsitem .description{
+  margin-top: 10rpx;
+  width: 540rpx;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  color: #AAAAAA;
+}
+.line_little{
+  background-color: rgb(228, 226, 222);
+  width: 720rpx;
+  height: 2rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.item-up,.item-down{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 8rpx;
+}
+.item01,.item02{
+  display: flex;
+  text-align: center;
+  width: 352rpx;
+  height: 180rpx;
+}
+.item03,.item04,.item05{
+  display: flex;
+  width: 232rpx;
+  height: 180rpx;
+}
+.item03 image,.item04 image,.item05 image{
+  /* position: absolute; */
+  width: 232rpx;
+  height: 180rpx;
+  z-index: -1;
+}
+.item01 image,.item02 image{
+  /* position: absolute; */
+  width: 352rpx;
+  height: 180rpx;
+  z-index: -1;
+}
+.item01 text{
+  z-index: 99;
+  left: 120rpx;
+  line-height: 180rpx;
+  position: absolute;
+  font-size: 36rpx;
+  color: gold;
+  font-weight: 700;
+}
+.item02 text{
+  z-index: 99;
+  right: 120rpx;
+  line-height: 180rpx;
+  position: absolute;
+  font-size: 36rpx;
+  color: gold;
+  font-weight: 700;
+}
+.item03 text{
+  z-index: 99;
+  left: 70rpx;
+  line-height: 180rpx;
+  position: absolute;
+  font-size: 36rpx;
+  color: gold;
+  font-weight: 700;
+}
+.item04 text{
+  z-index: 99;
+  left: 300rpx;
+  line-height: 180rpx;
+  position: absolute;
+  font-size: 36rpx;
+  color: gold;
+  font-weight: 700;
+}
+.item05 text{
+  z-index: 99;
+  right: 50rpx;
+  line-height: 180rpx;
+  position: absolute;
+  font-size: 36rpx;
+  color: gold;
+  font-weight: 700;
+}
+.partners image{
+  width: 230rpx;
+  height: 110rpx;
+  margin-bottom: 15rpx;
+}
+.title{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+}
+.partners{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.content{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.head{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  font-weight: 700;
+}
+video{
+  width: 700rpx;
+  margin-left: 25rpx;
+}
+.detail{
+  color: rgb(34, 34, 33);
+}

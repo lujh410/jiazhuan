@@ -1,0 +1,29 @@
+<!--pages/course/course.wxml-->
+<view class="head">
+  <text>Home</text>
+  <text> - </text>
+  <text class="ins_text1">专业学院</text>
+    <text> - </text>
+  <text class="ins_text2">{{institutename}}</text>
+</view>
+
+<view  class="container">
+  <view class="content" wx:for = '{{course_list}}' wx:key='index' data-id="{{item.id}}" bindtap="coursebtn">
+  <text class="protitle">{{item.protitle}}</text>
+    <view> 
+      <image src='{{item.proimgcontaner}}' mode="widthFix"></image>
+    </view>
+    <view class="detail">
+        <view>
+        <text class="teacher" decode="{{true}}">讲师：{{item.tearcher}}&emsp;&emsp;</text>
+        
+      </view>
+      <view>
+      <text class="price">课程价格：</text>
+      <text class="filterprice">{{item.filterprice}}</text>
+        <text class="freeprice"  decode="{{true}}">&emsp;&emsp;仅限人个学习-免费</text>
+      </view>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>

@@ -1,41 +1,73 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/index/index",
+    "pages/coursedetail/coursedetail",
+    "pages/institute/institute",
+    "pages/course/course",
     "pages/my/my",
     "pages/category/category",
     "pages/library/library",
     "pages/card/card",
     "pages/news/news",
-    "pages/news_detail/news_detail"
+    "pages/news_detail/news_detail",
+    "pages/idcard/idcard",
+    "pages/mycourse/mycourse",
+    "pages/learnhistory/learnhistory",
+    "pages/robotcourses/robotcourses",
+    "pages/robotcoursesdetail/robotcoursesdetail",
+    "pages/wxocr/wxocr",
+    "pages/wxtranslate/wxtranslate",
+    "pages/aboutus/aboutus",
+    "pages/business/business"
+
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "plugins": {
+    "ocr-plugin": {
+      "version": "3.0.2",
+      "provider": "wx4418e3e031e551be"
+    },
+    "WechatSI": {
+      "version": "0.0.7",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
   "window": {
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#F0FFFF",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "飞龙装修",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "小青云-首页",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor": "#1E90FF",
+    "selectedColor": "#4169E1",
+    "color": "#5E5E5E",
+    "backgroundColor": "#FFFFFF",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "/images/tabbar/home_back.png",
         "selectedIconPath": "/images/tabbar/home_front.png"
       },
       {
-        "pagePath": "pages/library/library",
-        "text": "图库",
-        "iconPath": "/images/tabbar/library_back.png",
-        "selectedIconPath": "/images/tabbar/library_front.png"
+        "pagePath": "pages/robotcourses/robotcourses",
+        "text": "青少年学堂",
+        "iconPath": "/images/tabbar/robot_back.png",
+        "selectedIconPath": "/images/tabbar/robot_front.png"
       },
       {
-        "pagePath": "pages/card/card",
-        "text": "名片",
-        "iconPath": "/images/tabbar/card_back.png",
-        "selectedIconPath": "/images/tabbar/card_front.png"
+        "pagePath": "pages/business/business",
+        "text": "扶工助产",
+        "iconPath": "/images/tabbar/institute_back.png",
+        "selectedIconPath": "/images/tabbar/institute_front.png"
       },
+   
       {
         "pagePath": "pages/my/my",
         "text": "个人中心",

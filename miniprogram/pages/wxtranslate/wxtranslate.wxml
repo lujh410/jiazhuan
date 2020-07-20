@@ -1,0 +1,16 @@
+<!--pages/wxtranslate/wxtranslate.wxml-->
+<view>请输入内容：</view>
+<form bindsubmit="translateTextAction"> 
+
+<textarea name ='content'  value="{{currentText}}">
+</textarea>
+<view catchlongtap="streamRecord"  catchtouchend="endStreamRecord">
+<view class='speech'>
+<image  src='../../images/speech.png' mode="widthFix"></image>
+</view>
+
+</view>
+<button form-type="submit" type='primary'>翻译成英文</button>
+</form>
+<view >翻译结果：</view>
+<view >{{output}}</view>

@@ -1,0 +1,23 @@
+<!--pages/robotcourses/robotcourses.wxml-->
+  <view class="item-up">
+    <view class="item01">
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/robotcouse_head1.png"></image>
+     <text class="text1">完整专业的课程体系</text>
+     <text class="text2">以课程内容为核心，辅以开源硬件</text>
+     <text class="text3">提升知识的迁移性和专业度</text>
+    </view>
+  </view>
+  <view class="title">基础系列</view>
+  <view class="courseitem">
+   <image id="courseitem1" src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course1.png" bindtap="courseitemclick"></image>
+   <image id="courseitem2" src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course2.png" bindtap="courseitemclick"></image>
+   <image id="courseitem3" src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course3.png" bindtap="courseitemclick"></image>
+   <image id="courseitem4" src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course4.png" bindtap="courseitemclick"></image>
+  </view>
+  <view class="title2">量子大学</view>
+  <view class="daxueimg">
+  <navigator url="/pages/institute/institute">
+  <image mode="widthFix" src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/liangzhidaxue.jpg"></image>
+  </navigator>
+  </view>
+  

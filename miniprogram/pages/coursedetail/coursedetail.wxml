@@ -1,0 +1,45 @@
+<!--pages/coursedetail/coursedetail.wxml-->
+<!-- 引入模板 -->
+ <import src="../../wxParse/wxParse.wxml"/>
+
+<view class="head">
+ 
+  <video src="{{video_src}}" poster="{{video_poster}}" autoplay="{{autoplay}}"
+  custom-cache = "{{false}}"
+  ></video>
+   <view class="protitle">{{protitle}}</view>
+     <view class="share-item">
+      <view class='save' bindtap="favclick">
+        <image src='../../images/share/save2.png' hidden="{{isfaved}}"></image>
+        <image src='../../images/share/save1.png' hidden="{{!isfaved}}"></image>
+      </view>
+      
+      <view class='share'>
+        <image src='../../images/share/share1.png'></image>
+        <button open-type='share'></button>
+      </view>
+  
+    </view>  
+</view>
+<view class="container">
+  <view class='tab-control'>
+     <block  wx:for="{{titles}}" wx:key="index">
+        <view class='tab-item {{index == tabcurrentIndex?"active": ""}}'
+              bind:tap="tapitemClick" 
+              data-index="{{index}}"> 
+              <!-- data-index属性：用于后台事件获取的时候可以用index来区分是哪个 -->
+          <text>{{item}}</text>
+        </view>
+    </block>
+  </view>
+  <view  class='chapter-item {{index == currentIndex?"active": ""}}' hidden="{{tabcurrentIndex==0}}"
+   wx:for = "{{chapters}}" wx:key='index' bindtap="charpterclick"
+    data-index='{{index}}'>
+   <text class="chapter">{{item.chapter}}</text>
+  </view>
+  <view class="html_div_instro" hidden="{{tabcurrentIndex==1}}">
+    <!-- 这里data中article为bindName -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+

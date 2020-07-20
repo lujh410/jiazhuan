@@ -1,0 +1,85 @@
+/* pages/institute/institute.wxss */
+.head{
+  margin: 10rpx;
+  margin-bottom: 30rpx;
+}
+.ins_text1{
+  font-size: 26rpx;
+  font-weight: 500;
+}
+.ins_text2{
+  font-weight: 200;
+  font-size: 26rpx;
+}
+image{
+  width: 650rpx;
+  height: 450rpx;
+  border-radius: 10rpx;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: center;
+  flex-wrap:wrap;
+  box-sizing: content-box;
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: left;
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  margin-left: 30rpx;
+}
+.content{
+  width: 700rpx;
+  margin: 10rpx 0rpx 30rpx 0rpx;
+}
+.line{
+  margin-top: 30rpx;
+margin-left: 30rpx;
+  width: 650rpx;
+  height: 2rpx;
+  background-color: rgb(223, 217, 217);
+}
+.protitle .teacher .filterprice{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+
+  width: 650rpx;
+}
+.protitle {
+  font-size: 33rpx;
+  font-weight: 400;
+  margin: 0 0 15rpx 0rpx;
+}
+.filterprice{
+  margin: 15rpx 0rpx;
+  text-decoration:line-through;
+  font-size: 26rpx;
+}
+.freeprice{
+  color: red;
+  margin: 15rpx 0rpx;
+  font-size: 26rpx;
+}
+.price{
+  margin: 15rpx 0rpx;
+  font-size: 26rpx;
+}
+.teacher{
+  color: rgb(107, 104, 104);
+  font-size: 26rpx;
+}

@@ -1,0 +1,331 @@
+<!--pages/robotcoursesdetail/robotcoursesdetail.wxml-->
+<!-- 创玩者（1-3年级） -->
+  <view class="item-up"  id="courseitem1">
+    <view class="item01">
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course01_head.jpg"></image>
+     <text class="text1">创玩者
+（1-3年级）</text>
+     <text class="text3">思维启蒙 兴趣培养</text>
+    </view>
+  </view>
+  <view class="title">课程系列</view>
+  <view class="courseitem">
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course01_detail01.png"></image>
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">机器人结构搭建
+        （48课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">在传统乐高系列的搭建基础上，学习基本机械结构搭建和机器人常用知识，建立力、能量等物理概念，为机器人学习打下基础。
+        本课程为“全国青少年机器人技术等级考试”一二级课程。
+        </text>
+      </view>
+   </view>
+  </view>
+  <view class="courseitem">
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">电子与编程启蒙
+        （64课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">在孩子们熟悉的手工和事物中引入电子贴纸、可编程电路板、类Scratch图形化编程等科技工具，让孩子在小制作中培养计算思维，建立对科技的兴趣。
+        </text>
+      </view>   
+   </view>
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course01_detail02.png"></image>
+  </view>
+<view class="container">
+  <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 学习目标</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">思维启蒙&动手能力</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 课程特色</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">结合实物，在游戏和小制作中建立对科技的兴趣</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 等级考试</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">全国青少年机器人技术一二级</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 对应竞赛</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}"></text>
+    </view>  
+  </view>
+</view>
+<!-- 探索者（4-6年级） -->
+  <view class="item-up"  id="courseitem2">
+    <view class="item01">
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course02_head.jpg"></image>
+     <text class="text1">探索者
+    （4-6年级）</text>
+     <text class="text3">思维启蒙 兴趣培养</text>
+    </view>
+  </view>
+  <view class="title">课程系列</view>
+  <view class="courseitem">
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course02_detail01.png"></image>
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">全球目标创意挑战
+        （128课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">课程遵循PBL跨学科教学理念，融合17个全球可持续发展目标与常用科学概念、信息技术等学科知识，在项目式学习中让孩子们了解人类面临的各种挑战，并充分发挥自己的创造力和动手能力，探究并应用跨学科知识和信息技术解决这些问题。
+        </text>
+      </view>
+   </view>
+  </view>
+  <view class="courseitem">
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">Arduino智能硬件设计
+        （64课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">基于Arduino嵌入式平台，系统地学习开源硬件、软件编程、多种传感器、自动控制等机器人领域相关学科，并将其应用于综合的工程设计项目中，进一步提高学生的计算思维和解决问题的能力。
+        该课程为“全国青少年机器人技术等级考试”三四级课程。
+        </text>
+      </view>   
+   </view>
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course02_detail02.png"></image>
+  </view>
+<view class="container">
+  <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 学习目标</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">创新意识、逻辑思维&全球视野</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 课程特色</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">跨学科整合、结合现实场景与全球化社会责任</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 等级考试</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">全国青少年机器人技术三四级</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 对应竞赛</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">Micro:bit Global Challenge/全国电子信息智能创新大赛</text>
+    </view>  
+  </view>
+</view>
+
+<!-- 设计者（7-9年级） -->
+  <view class="item-up"  id="courseitem3">
+    <view class="item01">
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course03_head.jpg"></image>
+     <text class="text1">设计者
+    （7-9年级）</text>
+     <text class="text3">专业技能 自主探究</text>
+    </view>
+  </view>
+  <view class="title">课程系列</view>
+  <view class="courseitem">
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course03_detail01.png"></image>
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">信息技术&物联网「C++」
+        （64课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">课程遵循PBL跨学科教学理念，融合17个全球可持续发展目标与常用科学概念、信息技术等学科知识，在项目式学习中让孩子们了解人类面临的各种挑战，并充分发挥自己的创造力和动手能力，探究并应用跨学科知识和信息技术解决这些问题。
+        </text>
+      </view>
+   </view>
+  </view>
+  <view class="courseitem">
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">Python AI 编程
+        （64课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">Python是人工智能研发使用最广泛的编程语言，但是Python作为代码语言容易让学生觉得枯燥。本课程结合人工智能相关硬件，让孩子们在游戏设计、图像识别、语音识别等人工智能应用中学习Python编程语言。
+        </text>
+      </view>   
+   </view>
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course03_detail02.png"></image>
+  </view>
+<view class="container">
+  <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 学习目标</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">独立解决问题能力，编程等专业技能</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 课程特色</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">竞赛导向，提升专业技能和自主探究能力</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 等级考试</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">全国青少年机器人技术五六级</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 对应竞赛</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">Google Science Fair(GSF)/全国电子信息智能创新大赛
+    </text>
+    </view>  
+  </view>
+</view>
+
+<!-- 创造者（10-12年级） -->
+  <view class="item-up" id="courseitem4">
+    <view class="item01">
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course03_head.jpg"></image>
+     <text class="text1">创造者
+    （10-12年级）</text>
+     <text class="text3">人工智能 独立创造</text>
+    </view>
+  </view>
+  <view class="title">课程系列</view>
+  <view class="courseitem">
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course03_detail01.png"></image>
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">人工智能算法初步
+        （32课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">在“Python AI编程”的基础上，加入更多算法层的基础知识。采用小组合作、项目式学习等方式组织教学，充分利用丰富的开 源框架和网络资源，搭建面向实际生活的应用场景，发挥学生自主学习与探究学 习能力，鼓励学生积极探究、大胆实践，激发学生的创新思维。
+        </text>
+      </view>
+   </view>
+  </view>
+  <!-- <view class="courseitem">
+   <view class="content">
+      <view class="head">
+        <text decode="{{true}}">Python AI 编程
+        （64课时）</text>
+      </view>
+      <view class="detail">
+        <text decode="{{true}}">Python是人工智能研发使用最广泛的编程语言，但是Python作为代码语言容易让学生觉得枯燥。本课程结合人工智能相关硬件，让孩子们在游戏设计、图像识别、语音识别等人工智能应用中学习Python编程语言。
+        </text>
+      </view>   
+   </view>
+    <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/course03_detail02.png"></image>
+  </view> -->
+<view class="container">
+  <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 学习目标</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">独立研究&创造能力、人工智能算法基础</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 课程特色</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">科创项目导向，注重专业性、独创性和实用性</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 等级考试</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">全国青少年机器人技术七八级</text>
+    </view>  
+  </view>
+
+    <view class="course_info">
+    <view class="course_info_head">
+      <view class="title">
+        <text decode="{{true}}">• 对应竞赛</text>
+      </view>  
+    </view>
+    <view class="detail">
+      <text decode="{{true}}">International Sci. & Eng. Fair (ISEF)/全国青少年科技创新大赛
+    </text>
+    </view>  
+  </view>
+</view>

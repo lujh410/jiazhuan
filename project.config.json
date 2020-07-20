@@ -25,11 +25,12 @@
 		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": true
 	},
-	"appid": "wx8ed4f6b957056f5f",
+	"appid": "wx93c9d2104ea27a45",
 	"projectname": "jiazhuan",
 	"libVersion": "2.11.0",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -54,15 +55,16 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
+					"id": 0,
+					"name": "pages/business/business",
+					"pathName": "pages/business/business",
+					"query": "",
+					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/news_detail/news_detail",
-					"pathName": "pages/news_detail/news_detail",
+					"id": 1,
+					"name": "pages/robotcourses/robotcourses",
+					"pathName": "pages/robotcourses/robotcourses",
 					"query": "",
 					"scene": null
 				},
@@ -70,6 +72,70 @@
 					"id": -1,
 					"name": "pages/my/my",
 					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/course/course",
+					"pathName": "pages/course/course",
+					"query": "cateid=24",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/coursedetail/coursedetail",
+					"pathName": "pages/coursedetail/coursedetail",
+					"query": "id=1942",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/institute/institute",
+					"pathName": "pages/institute/institute",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mycourse/mycourse",
+					"pathName": "pages/mycourse/mycourse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/learnhistory/learnhistory",
+					"pathName": "pages/learnhistory/learnhistory",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/idcard/idcard",
+					"pathName": "pages/idcard/idcard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wxtranslate/wxtranslate",
+					"pathName": "pages/wxtranslate/wxtranslate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/robotcoursesdetail/robotcoursesdetail",
+					"pathName": "pages/robotcoursesdetail/robotcoursesdetail",
+					"query": "",
 					"scene": null
 				}
 			]

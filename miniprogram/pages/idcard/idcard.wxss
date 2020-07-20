@@ -1,0 +1,25 @@
+/* pages/idcard/idcard.wxss */
+.canvas{visibility: hidden;position:absolute;z-index:-1; left:-10000rpx;top:-10000rpx;}
+button{
+  margin-top: 20rpx;
+}
+.title{
+  width: 750rpx;
+  text-align: center;
+  margin: 20rpx;
+  font-weight: 400;
+  font-size: 32rpx;
+}
+page{
+  padding: 30rpx;
+}
+.output{
+  display: flex;
+  position: relative;
+  width: 750rpx;
+  flex-direction: column;
+}
+.content{
+  position: relative;
+  display: flex;
+}

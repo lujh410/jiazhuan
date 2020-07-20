@@ -1,0 +1,23 @@
+<!--pages/mycourse/mycourse.wxml-->
+<!--pages/course/course.wxml-->
+<view class="head">
+  <text>Home</text>
+  <text> - </text>
+  <text class="ins_text1">我收藏的课程</text>
+</view>
+
+<view  class="container">
+  <view class="content" wx:for = '{{course_list}}' wx:key='index' data-id="{{item.id}}" bindtap="coursebtn">
+  <text class="protitle">{{item.protitle}}</text>
+    <view> 
+      <image src='{{item.proimgcontaner}}' mode="widthFix"></image>
+    </view>
+    <view class="detail">
+      
+      <text class="teacher">讲师：{{item.tearcher}}</text>
+      <!-- <text class="filterprice">{{item.filterprice}}</text>
+      <text class="freeprice">仅限人个学习-免费</text> -->
+    </view>
+    <view class="line"></view>
+  </view>
+</view>

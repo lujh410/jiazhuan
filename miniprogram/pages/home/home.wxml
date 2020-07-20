@@ -1,0 +1,85 @@
+<!--pages/home/home.wxml-->
+<!--1.展示轮播图-->
+<view class="container">
+<swiper class="swiper" 
+        indicator-dots 
+        indicator-active-color = "#000000"
+        autoplay
+        circular
+        interval = "3000"
+        duration = "300"
+>
+  <block wx:for = "{{banners}}" wx:key = "id">
+    <swiper-item class = "swiper-item">
+      <image class="swiper-image" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view wx:if ='{{advertisements}}'  class="title">活动报名</view>
+<view class="advertisement">
+  <block class="advertisementitem" wx:for ='{{advertisements}}' wx:key='index'>
+    <navigator url="{{item.linkUrl}}">
+      <image class="advertisementimg" src="{{item.imgUrl}}" mode="widthFix"></image>
+    </navigator>  
+  </block>
+</view>
+<view class="title">关于我们</view>
+<view>
+  <view>
+  <video  autoplay  poster="{{video_poster}}" custom-cache = "{{false}}" loop
+  src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/xiaoqingyun.mp4"></video>
+  </view>
+  <view class="content">
+    <view class="head">小青云 智慧成长</view>
+    <view class="detail">
+    <view>
+      <text decode="{{true}}">&emsp;&emsp;小青云工作室专注于为各年龄段学生提供基于科技创新、放眼全球的素质教育。
+      </text>
+    </view>
+      <view>
+        <text decode="{{true}}">&emsp;&emsp;秉承“开放共享，云成长”的信念，小青云依托量子大学及享渔教育资源，按照“全国青少年机器人技术等级考试”教学要求，通过不断改进教学方式和开发体系化教学内容，为教育者和学习者提供从内容到工具到服务的整体解决方案，以提升学生在人工智能时代的科技素养和创新实践能力，成为热爱分享的终身学习者。
+       </text>
+    </view>
+      <view>
+        <text decode="{{true}}">&emsp;&emsp;小青云工作室是量子大学的代理商，为各企事业单位提供专业学院级别的各种培训教育资源，帮助企事业单位培训所需人才。
+        </text>
+       </view>
+       </view>
+  </view>
+</view>
+<view class="title">主营项目</view>
+  <view class="item-up">
+    <view id="courseitem1" class="item01" bindtap="courseitemclick">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item01.png"></image>
+      <text>科创课程</text>
+    </view>
+    <view class="item02" bindtap="courseitemclick">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item02.jpg"></image>
+      <text>竟赛课程</text>
+    </view>
+  </view>
+  <view class="item-down">
+    <view class="item03">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item03.jpg"></image>
+      <text>冬夏令营</text>
+    </view>
+    <view class="item04" bindtap="courseitemclick">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item04.jpg"></image>
+      <text>师资培训</text>
+    </view>
+    <view class="item05" bindtap="courseitemclick05">
+      <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/item05.png"></image>
+      <text>课程云平台</text>
+    </view>
+  </view>
+  <view class="title">合作伙伴</view>
+  <view class="partners">
+  
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/partner02.png"></image>
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/partner03.png"></image>
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/partner01.png"></image>
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/partner05.png"></image>
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/partner06.png"></image>
+   <image src="cloud://prod-vd3xs.7072-prod-vd3xs-1302660826/homeconfig/partner04.png"></image>
+  </view>

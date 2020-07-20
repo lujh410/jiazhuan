@@ -1,0 +1,26 @@
+<!--pages/business/business.wxml-->
+<view wx:for="{{business_list}}">
+ <view class="title">{{item.title}}</view>
+  <!-- <navigator url="{{item.link_url}}">
+    <image src="{{item.image_url}}" mode="widthFix"></image>
+  </navigator>
+
+   -->
+      <!-- indicator-dots="false" -->
+  <view class="container">
+    <swiper class="swiper" 
+            indicator-dots="{{false}}"
+            indicator-active-color = "#000000"
+            autoplay
+            circular
+            interval = "3000"
+            duration = "300"
+    >
+      <block wx:for = "{{item.banners}}" wx:key = "id" wx:for-item="items">
+        <swiper-item class = "swiper-item">
+          <image class="swiper-image" data-url="{{items.linkUrl}}" src="{{items.picUrl}}" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
